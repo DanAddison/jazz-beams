@@ -1,7 +1,8 @@
 @mixin body-font {
-  font-family: 'Muli', Roboto, 'Helvetica Neue';
+  // font-family: "Muli", Roboto, "Helvetica Neue";
+  font-family: "Roboto Slab", Roboto, "Helvetica Neue";
 }
 
 @mixin heading-font {
-  font-family: 'Saira Extra Condensed', Roboto, 'Helvetica Neue';
+  font-family: "Barrio", Roboto, "Helvetica Neue";
 }

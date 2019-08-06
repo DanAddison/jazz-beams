@@ -2,6 +2,7 @@ body {
   @include body-font;
   line-height: 1.5;
   margin: 0;
+  background-color: $bg;
 }
 
 h1,
@@ -47,7 +48,7 @@ a {
 }
 
 .link-text::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: 0;

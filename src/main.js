@@ -10,12 +10,16 @@ export default function(Vue, { router, head, isClient }) {
 
   head.link.push({
     rel: "stylesheet",
-    href:
-      "https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+    href: "https://fonts.googleapis.com/css?family=Barrio&display=swap"
   });
   head.link.push({
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+  });
+
+  head.link.push({
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
   });
 
   head.meta.push({

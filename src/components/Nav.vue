@@ -1,11 +1,11 @@
 <template>
   <nav class="navbar" id="sideNav">
-    <div v-on:click.prevent="$scrollTo('#about')" class="navbar-brand">
-      <span class="name">Dan Addison</span>
+    <div v-on:click.prevent="$scrollTo('#welcome')" class="navbar-brand">
+      <span class="name">Jazz Beams</span>
       <span class="avatar">
         <g-image
-          alt="Dan swimming in the ocean"
-          src="../assets/images/KefAvatarSquare.jpg"
+          alt="planet with psychedelic rings"
+          src="../assets/images/jazz-fav.png"
           class="img-profile"
           width="300"
         />
@@ -15,22 +15,13 @@
     <div id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
+          <a class="nav-link" v-on:click.prevent="$scrollTo('#welcome')">Welcome</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" v-on:click.prevent="$scrollTo('#about')">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" v-on:click.prevent="$scrollTo('#portfolio')">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" v-on:click.prevent="$scrollTo('#experience')">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" v-on:click.prevent="$scrollTo('#skills')">Skills</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" v-on:click.prevent="$scrollTo('#education')">Education</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link" v-on:click.prevent="$scrollTo('#interests')">Interests</a>
+          <a class="nav-link" v-on:click.prevent="$scrollTo('#sounds')">Sounds</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" v-on:click.prevent="$scrollTo('#contact')">Contact</a>
@@ -50,6 +41,8 @@
   .name {
     color: $white-overlay1;
     text-transform: uppercase;
+    @include heading-font;
+    font-size: 1.75rem;
   }
 }
 #sideNav {
@@ -58,8 +51,6 @@
   z-index: 10;
   background-color: $primary;
   .nav-link {
-    font-weight: 800;
-    letter-spacing: 0.05rem;
     text-transform: uppercase;
   }
   #navbarSupportedContent,
@@ -69,6 +60,8 @@
 }
 @media (min-width: $bp-sidebar) {
   #sideNav {
+    @include heading-font;
+    font-size: 1.75rem;
     text-align: center;
     top: 0;
     left: 0;
@@ -91,15 +84,15 @@
           max-height: 10rem;
           border-radius: 50%;
           border: 0.5rem solid $white-overlay3;
-          transition: .3s;
+          transition: 0.3s;
 
           &:hover {
-            border: 0.5rem solid $white-overlay2;
+            border: 0.5rem solid $bg;
           }
         }
       }
     }
-  
+
     #navbarSupportedContent {
       display: flex;
       width: 100%;
@@ -109,11 +102,12 @@
         width: 100%;
         padding-left: 0;
       }
-      .nav-item, .nav-link {
+      .nav-item,
+      .nav-link {
         display: block;
-        padding: .25rem 0;
+        padding: 0.25rem 0;
         color: $white-overlay2;
-        transition: .2s;
+        transition: 0.2s;
 
         &:hover,
         &:focus {

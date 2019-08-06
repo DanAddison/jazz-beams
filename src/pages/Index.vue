@@ -1,43 +1,31 @@
 <template>
   <Layout>
     <div class="container">
-      <About/>
-      <hr>
-      <Portfolio/>
-      <hr>
-      <Experience/>
-      <hr>
-      <Skills/>
-      <hr>
-      <!-- <Education/>
-      <hr> -->
-      <Interests/>
-      <hr>
-      <Contact/>
+      <Welcome />
+      <hr />
+      <About />
+      <hr />
+      <Sounds />
+      <hr />
+      <Contact />
     </div>
   </Layout>
 </template>
 
 <script>
+import Welcome from "../components/Welcome";
 import About from "../components/About";
-import Portfolio from "../components/Portfolio";
-import Experience from "../components/Experience";
-import Skills from "../components/Skills";
-// import Education from "../components/Education";
-import Interests from "../components/Interests";
+import Sounds from "../components/Sounds";
 import Contact from "../components/Contact";
 export default {
   components: {
+    Welcome,
     About,
-    Portfolio,
-    Experience,
-    Skills,
-    // Education,
-    Interests,
+    Sounds,
     Contact
   },
   metaInfo: {
-    title: "Resume",
+    title: "Jazz Beams DJs"
   }
 };
 </script>
@@ -72,7 +60,7 @@ section.resume-section {
     color: $copy-lightest;
   }
   .lead {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
   p {
     color: $copy-light;
@@ -90,5 +78,11 @@ section.resume-section {
     padding-bottom: 3rem;
     max-width: 60rem;
   }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: $black;
 }
 </style>
