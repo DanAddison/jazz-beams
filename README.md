@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://danaddisoncreative.com">
-    <img alt="logo of whiskey tumbler with ice cubes" src="src/favicon.png" width="200" />
+  <a href="https://jazzbeams.netlify.com">
+    <img alt="psychedellic planet with rings" src="src/favicon.png" width="200" />
   </a>
 </p>
 <h1 align="center">
