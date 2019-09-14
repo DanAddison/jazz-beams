@@ -1,4 +1,11 @@
-# Online Resume
+<p align="center">
+  <a href="https://danaddisoncreative.com">
+    <img alt="logo of whiskey tumbler with ice cubes" src="src/favicon.png" width="200" />
+  </a>
+</p>
+<h1 align="center">
+  Jazz Beams by Dan Addison
+</h1>
 
 [Live site](https://jazzbeams.com)
 
